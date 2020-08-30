@@ -19,7 +19,7 @@ function showSlides() {
 }
 
 window.onscroll = function() {scrollFunction()};
-
+mybutton = document.getElementById("myBtn");
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "15px 10px 0 10px";    
@@ -34,4 +34,12 @@ function scrollFunction() {
     document.getElementById("logo").style.height = "60px";
     document.getElementById("menu").style.paddingTop = "15px";
   }
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
+
+
+

@@ -63,7 +63,7 @@ ul {
 } */
 
 #navbar {
-	/* overflow: hidden;	 */
+	overflow: hidden;	
 	padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
 	transition: 0.4s; /* Adds a transition effect when the padding is decreased */
 	position: fixed; /* Sticky/fixed navbar */
@@ -221,6 +221,29 @@ ul {
 	  
 	}
  }
+
+#myBtn{
+	animation: toTop 1s ease;
+	display: none;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 20px;
+	right: 0px;
+	z-index: 99;
+	border: none;
+	background-color: #404040;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 18px;
+	
+}
+
+@keyframes toTop{
+	0%{transform: translateX(40px);}
+	
+}
 
 
 /* The dots/bullets/indicators */
