@@ -8,22 +8,23 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 	<div class="wrapper">		
-		<header class="header">				
+		<header id="home" class="header">				
 			<div id="navbar">
 				<div class="container">
-					<a href="#default" ><img id="logo" src="img/logo/cropped-logo-1.png" alt=""></a>
+					<a href="#home" ><img id="logo" src="img/logo/cropped-logo-1.png" alt=""></a>
 					<div class="header__burger">
 						<span></span>
 					</div>
 					<div class="navbar-right">
 						<ul id="menu" class="header__list">
-							<li><a href="" class="active"><i class="fa fa-home"></i>Glówna</a></li>
-							<li><a href="#" >Polecamy</a></li>
-							<li><a href="#" >Cennik</a></li>
-							<li><a href="#" >Prezentacje</a></li>
+							<li><a href="#home" class="active"><i class="fa fa-home"></i>Glówna</a></li>
+							<li><a href="#recomm" >Polecamy</a></li>
+							<li><a href="#prices" >Cennik</a></li>
+							<li><a href="#video" >Prezentacje</a></li>
 							<li><a href="#" >Sklep</a></li>
-							<li><a href="#" >Kontakt</a></li>
+							<li><a href="#cont" >Kontakt</a></li>
 							<li><a href="#" ><i class="fas fa-shopping-cart"></i></a></li>
 							<li><a href="#" ><i class="fas fa-user"></i></a></li>
 						</ul>					
@@ -42,7 +43,7 @@
 			  <div class="text">
 				<h1>Fotografia Ślubna</h1>
 				<p>Fotografia ślubna, zdjęcia ślubne, sesje ślubne, zdjęcia plenerowe, fotograf na ślub i wesele</p>
-				<a href="#about" class="btn__slide"><span class="mouse-wheel"></span></a>
+				<a href="#portfolio" class="btn__slide"><span class="mouse-wheel"></span></a>
 			  </div>
 			</div>
 			
@@ -50,7 +51,7 @@
 			  	<img src="img/main/slider3.jpg" style="width:100%">
 			  	<div class="text"><h1>Profesjonalne sesje fotograficzne</h1>
 					<p>Wyjątkowe i profesjonalne sesje, zdjęcia plenerowe</p>
-					<a href="#" class="btn__slide"><span class="mouse-wheel"></span></a>
+					<a href="#portfolio" class="btn__slide"><span class="mouse-wheel"></span></a>
 				</div>
 			</div>			
 			<div class="dots" style="text-align:center">
@@ -62,7 +63,7 @@
 
 		
 
-		<section class="gallery">
+		<section id="portfolio" class="gallery">
 			<div class="gallery__title title">
 				<h1>Portfolio</h1>
 			</div>
@@ -118,7 +119,7 @@
 		</section>
 		<!-- /.klient -->
 
-		<section class="recommend">
+		<section id="recomm" class="recommend">
 			<div class="container">
 				<div class="recommend__title title">
 					<h1>Polecamy</h1>
@@ -146,7 +147,7 @@
 			</div>
 		</section>
 
-		<section class="price">
+		<section id="prices" class="price">
 			<div class="container">
 				<div class="price-title title">
 					<h1>Cennik</h1>
@@ -199,16 +200,17 @@
 			</div>
 		</section>
 
-		<section class="presentation">
-			<div class="presentation-title title">
-				<h1>Prezentacje</h1>
-			</div>
-			<iframe src="https://player.vimeo.com/video/28160676" id="video" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-			
-		
+		<section id="video" class="presentation">
+			<div class="container">
+				<div class="presentation-title title">
+					<h1>Prezentacje</h1>
+				</div>
+				<iframe src="https://player.vimeo.com/video/28160676" id="video1" frameborder="0" allow="autoplay">
+				</iframe>
+			</div>		
 		</section>
 
-		<section class="contact">
+		<section id="cont" class="contact">
 			<div class="container">
 				<div class="contact-title title">
 					<h1>Kontakt</h1>
