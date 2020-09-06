@@ -115,11 +115,12 @@ ul {
 	text-align: center;	
 	color: #fff;
 	font-family: 'Montserrat',sans-serif;
-	top: 10px;	
+	top: 15px;	
 }
 .main-text h1{
 	margin-bottom: 15px;
 	line-height: 1.2;
+	font-size: 30px;
 }
 .main-text p{
 	padding: 0 10px;
@@ -394,6 +395,7 @@ ul {
 
 .recommend__firm {
 	margin-left: 10px;
+	margin-right: 10px;
 	color: #3b3333 ;
 	border-bottom-color: #eaeaea;
 	border-bottom-width: 1px;
@@ -426,6 +428,7 @@ ul {
 .price {
 	color: #eaeaea;
 	margin-left: 10px;
+	margin-right: 10px;
 	padding-top: 25px;
 }
 
@@ -617,6 +620,7 @@ form a{
 	}
 	.navbar-right.active{
 		top: 0;
+		padding-top: 50px;
 	}
 	#menu {
 		display: block;
@@ -627,9 +631,7 @@ form a{
 	.header__list a{
 		font-size:18px;
 	}
-	#logo{
-		justify-content: center;
-	}
+	
 }
 
 @media (max-width:990px){
@@ -796,6 +798,12 @@ form a{
 }
 
 @media (max-width: 575px){
+	.price-list{
+		padding-top: 10px;
+	}
+	.price-list h2{
+		margin: 5px 0;
+	}
 	#logo{
 		display: none;
 	}
@@ -809,7 +817,7 @@ form a{
 		display: none;
 	}
 	.btn__slide{
-		display: none;
+		top: 110%;
 	}
 	.text p{
 		padding-bottom: 5px;
@@ -817,5 +825,9 @@ form a{
 	}
 	#video1{
 		width: 350px;		
+	}
+	.contakt__map iframe{
+		width: 330px;
+		height: 250px;
 	}
 }
