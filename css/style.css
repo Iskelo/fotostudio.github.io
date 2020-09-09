@@ -24,6 +24,8 @@ h1 {
 	
 }
 
+
+
 ul {
 	list-style: none;
 }
@@ -137,24 +139,34 @@ ul {
 	filter: brightness(100%);
 	margin-bottom: 60px;
 }
-.mySlides img {
-	vertical-align: middle;  
-	filter: brightness(40%);}
+
+.mySlides img{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	filter: brightness(40%);
+}
 
 /* Slideshow container */
 .slideshow-container {
 	top: 0;
 	max-width: 100%;
+	/* height: 100vh; */
 	position: relative;
 	margin: auto;
 	
+}
+
+.mySlides{
+	overflow: hidden;
+	height: 100vh;
 }
 /* Caption text */
 .text {
 	
 	padding: 15px 12px;
 	position: absolute;
-	bottom: 40px;
+	bottom: 30%;
 	width: 100%;
 	text-align: center;	
 	color: #fff; 
@@ -348,6 +360,7 @@ ul {
 
 
 .klient {
+	color: #afafaf;
 	margin-top: 50px;
 }
 
@@ -373,6 +386,7 @@ ul {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
+	font-weight: 700;
 	background-color: #f9b602;
 	border-radius: 3px;
 	padding: 20px 20px;
@@ -382,28 +396,31 @@ ul {
 /* ===RECOMM=== */
 .recommend {
 	padding-top: 5px;
-	background-color: #fff;
+	background-color: #3b3333;
 }
 
 .recommend__title h1{
+	color:  #afafaf;
 	padding-top: 30px;
-	border-bottom-color: #eaeaea;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
 	padding-bottom: 1em;
+	
 }
 
 .recommend__firm {
 	margin-left: 10px;
 	margin-right: 10px;
-	color: #3b3333 ;
-	border-bottom-color: #eaeaea;
+	color:  #afafaf;
+	border-bottom-color: #404040;	
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	padding-bottom: 1em;
 }
+.recommend :last-child{
+	border-bottom: none;
+}
 
 .titles {
+	
 	margin:20px 0 20px 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
@@ -415,7 +432,7 @@ ul {
 	transition: ease .5s;
 }
 .recommend__firm p a:hover{
-	color: #3b3333 ;
+	color: #fff ;
 }
 
 .recommend__firm ul{
@@ -426,7 +443,7 @@ ul {
 
 /* ===PRICE=== */
 .price {
-	color: #eaeaea;
+	color: #afafaf;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-top: 25px;
@@ -452,12 +469,15 @@ ul {
 /* ===VIDEO=== */
 
 .presentation{
+	
 	padding-top: 25px;
 	padding-bottom: 20px;
-	background-color: #fff;
+	background-color: #3b3333;
 	text-align: center;
 }
-
+.presentation h1{
+	color: #afafaf;
+}
 #video1{
 	/* justify-content: center; */
 	width: 640px;
@@ -467,6 +487,7 @@ ul {
 
 /* ===CONTACT=== */
 .contact {
+	color: #afafaf;
 	padding-top: 25px;
 	margin-bottom: 50px;
 }
@@ -509,12 +530,18 @@ ul {
 form a{
 	margin-top: 10px;
 	text-decoration: none;
+	font-weight: 700;
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #f9b602;
 	border-radius: 3px;
 	padding: 10px 10px;
 	transition: 0.5s ease ;
+	cursor: pointer;
+}
+form a:hover{
+	background-color: #404040;
+	
 }
 
 #fname, #lname{
@@ -831,3 +858,58 @@ form a{
 		height: 250px;
 	}
 }
+
+
+.gallery{
+	padding-top: 60px;
+	text-align: center;
+}
+.gallery__nav{
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 30px;
+}
+
+.gallery__nav a{
+	text-decoration: none;
+	border: 1px solid #404040 ;
+	padding: 5px 15px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	color: #afafaf;
+	margin-left: 10px;
+	transition: 0.5s ease ;
+	font-size: 24;
+}
+.gallery__nav a:first-child{
+	margin-left: 0px;
+}
+
+.gallery__nav a.active{
+	background-color: #404040;	
+}
+.image-container div{
+	margin: 0 auto;
+	display: inline-block;
+}
+	
+.filter img{
+	object-fit: cover;
+	width: 300px;
+	height: 250px;
+	margin: 10px;
+	
+}
+
+
+
+.myImg{
+	cursor: pointer;
+	transition: 0.2s ease;
+		
+}
+.myImg:hover{
+	transform: scale(1.15);	
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
